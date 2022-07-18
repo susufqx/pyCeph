@@ -13,8 +13,8 @@ from boto3.resources.base import ServiceResource as s3_cls
 from typing import Tuple
 from urllib.parse import quote
 
-from utils import logger, print_excp
-from utils import CryptoUtil
+from .log import logger, print_excp
+from .crypto import CryptoUtil
 
 
 def Singleton(cls):

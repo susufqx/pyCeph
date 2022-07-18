@@ -8,7 +8,7 @@
 
 
 import aioboto3
-from utils import logger
+from .log import logger
 
 
 REGION_NAME = 'str'
