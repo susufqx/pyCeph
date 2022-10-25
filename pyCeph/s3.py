@@ -9,6 +9,7 @@
 
 import os
 import boto3
+import urllib3
 from boto3.resources.base import ServiceResource as s3_cls
 from typing import Tuple
 from urllib.parse import quote
@@ -16,6 +17,8 @@ from urllib.parse import quote
 from .log import logger, print_excp
 from .crypto import CryptoUtil
 
+
+urllib3.disable_warnings()
 
 def Singleton(cls):
     _instance = {}
